@@ -4,27 +4,44 @@
 
 
 <div class="col-md-9">
+    <!--<div id="gridContainer" dx-data-grid="gridOptions">-->
+        <!--<div data-options="dxTemplate: {name: 'detail'}">-->
+            <!--<div class="internal-grid-container">-->
+                <!--<div>{{data.CustomerID + " " + data.CompanyName + " Orders:"}}</div>-->
+                <!--<div class="internal-grid" dx-data-grid="{-->
+				<!--dataSource: data.Orders,-->
+				<!--columnAutoWidth: true,-->
+                <!--columns: [{-->
+                    <!--dataField: 'ShipName'-->
+                <!--},-->
+                <!--{-->
+                <!--dataField: 'OrderID'-->
+                <!--},-->
+                <!--{-->
+                <!--dataField: 'OrderDate'-->
+                <!--}-->
+                <!--]-->
+			<!--}"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
     <div id="gridContainer" dx-data-grid="gridOptions">
         <div data-options="dxTemplate: {name: 'detail'}">
             <div class="internal-grid-container">
-                <div>{{data.CustomerID + " " + data.CompanyName + " Orders:"}}</div>
+                <div>{{data.Name + " BusinessEntities:"}}</div>
                 <div class="internal-grid" dx-data-grid="{
-				dataSource: data.Orders,
+				dataSource: data.BusinessEntities,
 				columnAutoWidth: true,
                 columns: [{
-                    dataField: 'ShipName'
-                },
-                {
-                dataField: 'OrderID'
-                },
-                {
-                dataField: 'OrderDate'
+                    dataField: 'Name'
                 }
                 ]
 			}"></div>
             </div>
         </div>
     </div>
+
 </div>
 
 </div>
